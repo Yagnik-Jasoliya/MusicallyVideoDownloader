@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/MainItemlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        card_view:cardBackgroundColor="@color/colorPrimary"
+        card_view:cardCornerRadius="25dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/Imaage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_centerInParent="true"
+                android:background="#be5e5e5e"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/image_video"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_play_circle_outline_black_24dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/share_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5.0"
+                    android:background="#af000000"
+                    android:padding="10dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_share"
+                     />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#ffff" />
+
+                <ImageButton
+                    android:id="@+id/imb_collection_delete"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5.0"
+                    android:background="#af000000"
+                    android:padding="10dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_delete_gellary"
+                     />
+            </LinearLayout>
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/share_layout"-->
+                <!--android:layout_width="50dp"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_marginBottom="4dp"-->
+                <!--android:layout_marginRight="4dp"-->
+                <!--android:visibility="visible">-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/share_video"-->
+                    <!--android:layout_width="40dp"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:layout_centerInParent="true"-->
+                    <!--android:padding="7dp"-->
+                    <!--android:src="@drawable/ic_share_black_24dp" />-->
+            <!--</RelativeLayout>-->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/selected_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="#80fafafa"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/delete_check_layout"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/delte_video_layout"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/delete_check_background" />
+
+                <ImageView
+                    android:id="@+id/delte_video"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/delete_check"
+                    android:padding="7dp"
+                    android:src="@drawable/ic_check_black_24dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

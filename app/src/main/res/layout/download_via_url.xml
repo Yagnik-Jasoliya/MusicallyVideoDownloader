@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/splash_download_layout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/search_background"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/download_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp">
+
+            <!--<com.airbnb.lottie.LottieAnimationView-->
+                <!--android:id="@+id/animation_view"-->
+                <!--android:layout_width="100dp"-->
+                <!--android:layout_height="100dp"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:layout_margin="5dp"-->
+                <!--app:lottie_autoPlay="true"-->
+                <!--app:lottie_colorFilter="@color/colorAccent"-->
+                <!--app:lottie_fileName="splashy.json"-->
+                <!--app:lottie_loop="true"-->
+                <!--android:padding="10dp" />-->
+
+            <TextView
+                android:id="@+id/progress"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:textColor="#fafafa" />
+
+            <TextView
+                android:layout_below="@+id/progress"
+                android:id="@+id/download_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:text="Downloading..."
+                android:textColor="#fafafa"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_toRightOf="@+id/download_progressbar"
+            android:text=" Please wait while the video gets download..."
+            android:textColor="#fafafa" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#000">
+
+        <RelativeLayout
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+
+                android:text="Get Followers"
+                android:textColor="#ffff"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_height="60dp"
+        android:layout_marginTop="70dp"
+        android:layout_width="60dp"
+        android:src="@drawable/logo" />
+
+    <EditText
+        android:background="#000"
+        android:hint="@string/hint"
+        android:id="@+id/username"
+        android:textColor="#fff"
+        android:textColorHint="#bfbebe"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:paddingLeft="5dp" />
+
+    <Button
+        android:background="@drawable/buttonshape3"
+        android:id="@+id/button_next"
+        android:layout_below="@+id/username"
+        android:layout_centerHorizontal="true"
+        android:layout_height="50dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="100dp"
+        android:text="Next"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_next"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:id="@+id/ll_native"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_width="match_parent"
+        android:text="Note: We never store any infromation about you."
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimary"/>
+</RelativeLayout>

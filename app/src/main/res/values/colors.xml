@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff004c</color>
+    <color name="colorPrimaryDark">#000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffff</color>
+
+
+
+    <color name="dot_light_screen1">#FF4081</color>
+    <color name="dot_light_screen2">#FF4081</color>
+    <color name="dot_light_screen3">#FF4081</color>
+    <color name="dot_light_screen4">#FF4081</color>
+
+    <color name="dot_dark_screen1">#ffff</color>
+    <color name="dot_dark_screen2">#ffff</color>
+    <color name="dot_dark_screen3">#ffff</color>
+    <color name="dot_dark_screen4">#ffff</color>
+
+</resources>

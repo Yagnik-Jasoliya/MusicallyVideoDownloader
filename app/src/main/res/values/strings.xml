@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Musically Video Download</string>
+    <string name="copy_paste_url_here">Copy &amp; Paste URL here....</string>
+    <string name="download">Download</string>
+    <string name="search">search</string>
+    <string name="search_menu_title">Search</string>
+    <string name="share_this_app">Share this app</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="video_will_appear_here">Video will appear here...</string>
+    <string name="help">Help</string>
+    <string name="click_here">Click here.</string>
+    <string name="next">Next</string>
+    <string name="skip">Back</string>
+    <string name="start">Done</string>
+    <string name="hint">musiclly username</string>
+    <string name="process_reward">ca-app-pub-2088193644957545/8849857775</string>
+
+</resources>
